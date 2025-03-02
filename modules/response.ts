@@ -63,8 +63,8 @@ export class ResponseModule {
       async start(controller) {
         queueIndicator({
           controller,
-          status: "Coming up with an answer",
-          icon: "thinking",
+          status: "sifting through database",
+          icon: "getting my thoughts together",
         });
         const systemPrompt = RESPOND_TO_RANDOM_MESSAGE_SYSTEM_PROMPT();
         const mostRecentMessages: CoreMessage[] = await convertToCoreMessages(
@@ -109,8 +109,8 @@ export class ResponseModule {
       async start(controller) {
         queueIndicator({
           controller,
-          status: "Coming up with an answer",
-          icon: "thinking",
+          status: "checking my database",
+          icon: "getting my thoughts together",
         });
         const systemPrompt = RESPOND_TO_HOSTILE_MESSAGE_SYSTEM_PROMPT();
         const citations: Citation[] = [];
