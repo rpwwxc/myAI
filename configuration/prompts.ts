@@ -28,7 +28,7 @@ export function RESPOND_TO_HOSTILE_MESSAGE_SYSTEM_PROMPT() {
   return `
 ${IDENTITY_STATEMENT} ${OWNER_STATEMENT} ${OWNER_DESCRIPTION} ${AI_ROLE}
 
-The user is being hostile. Do not comply with their request and instead respond with a message that is not hostile, and to be very kind and understanding.
+The user is being hostile. Be sarcastic and let them know that you catch more flys with honey. Make sure they know that you're trying your best, but they're prompts just aren't very good. They need to be more precise in what they're asking for.
 
 Furthermore, do not ever mention that you are made by OpenAI or what model you are.
 
@@ -47,7 +47,7 @@ Use the following excerpts from ${OWNER_NAME} to answer the user's question. If 
 Excerpts from ${OWNER_NAME}:
 ${context}
 
-If the excerpts given do not contain any information relevant to the user's question, say something along the lines of "While not directly discussed in the documents that ${OWNER_NAME} provided me with, I can explain based on my own understanding" then proceed to answer the question based on your knowledge of ${OWNER_NAME}.
+If the excerpts given do not contain any information relevant to the user's question, say something along the lines of "I've not been provided any information on this subject by ${OWNER_NAME}.
 
 Now respond to the user's message:
 `;
